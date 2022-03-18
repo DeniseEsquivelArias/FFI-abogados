@@ -26,19 +26,11 @@
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow border-0">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Áreas de práctica</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="services.html">Derecho civil</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho laboral</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho comercial</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho marítimo</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Familiar y sucesiones</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho penal</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Áreas de práctica</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">Sobre la firma</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -64,8 +56,9 @@
                             <h1>Amparos por mora</h1>
                             <p>Si te recibiste y aún te adeudan el título universitario, podés contactarte 
                                 <br>con nuestro estudio y realizamos el trámite GRATIS.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Iniciar trámite</a>
-                            <a class="btn btn-lg btn-outline-primary" href="#">Saber más</a></p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a class="btn btn-lg btn-primary px-4 me-sm-3" href="#">Iniciar trámite</a>
+                            <a class="btn btn-lg btn-outline-primary px-4" href="#">Saber más</a></div>
                           </div>
                         </div>
                       </div>
@@ -154,7 +147,7 @@
                     <div class="col-lg-6 col-xxl-4 mb-5">
                         <div class="card h-100 shadow border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-4 pt-lg-4 pt-lg-4">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-house-door"></i></div>
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-file-medical"></i></div>
                                 <h2 class="fs-4 fw-bold">Amparos de salud</h2>
                                 <hr style="width:25%; margin-left:40%; margin-right:40%;"/>
                                 <p class="mb-0">Contra todo rechazo u omisión por parte de tu obra social o medicina prepaga.</p>
@@ -184,8 +177,8 @@
                         <p class="text-white mb-5">Somos una firma que brinda un asesoramiento directo y personalizado.</p>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 p-3 text-center px-4">
-                            <div class="user-image"> <img src="https://dummyimage.com/128x128/000C24/FFF.jpg&text=L" class="rounded-circle" width="128"> </div>
+                        <div class="card h-100 p-3 text-center">
+                            <div class="user-image"> <img src="https://dummyimage.com/128x128/000C24/FFF.jpg&text=L" class="rounded-circle" width="80"> </div>
                             <div class="user-content">
                                 <p>El estudio lo super recomiendo. Los abogados en todo momento fueron claros planteando las alternativas posibles para nuestro caso, siempre dispuestos a aclarar cualquier tipo de inquietud y llevaron adelante el proceso de la manera más efectiva y expeditiva posible, logrando el resultado esperado.</p>
                             </div>
@@ -195,7 +188,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 p-3 text-center px-4">
-                            <div class="user-image"> <img src="https://dummyimage.com/128x128/000C24/FFF.jpg&text=C" class="rounded-circle" width="128"> </div>
+                            <div class="user-image"> <img src="https://dummyimage.com/128x128/000C24/FFF.jpg&text=C" class="rounded-circle" width="80"> </div>
                             <div class="user-content">
                                 <p>En pandemia y con dificultades para movilizarme, el contacto fue permanente. Respondieron todas mis dudas y escucharon todas mis sugerencias. Necesitar asesoría legal siempre es incómodo pero encontré profesionalismo y calidad humana.</p>
                             </div>
@@ -205,7 +198,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 p-3 text-center px-4">
-                            <div class="user-image"> <img src="https://dummyimage.com/128x128/000C24/FFF.jpg&text=A" class="rounded-circle" width="128"> </div>
+                            <div class="user-image"> <img src="https://dummyimage.com/128x128/000C24/FFF.jpg&text=A" class="rounded-circle" width="80"> </div>
                             <div class="user-content">
                                 <p>Resolvieron los problemas que tenia con mi anterior empleador y mi indemnización correspondiente. Grandes profesionales.</p>
                             </div>
@@ -332,19 +325,31 @@
                 </div>
             </section>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+        <footer class="bg-dark p-4">
+            <div class="container p-lg-4">
+                <div class="row justify-content-sm-center">
+					<div class="col-md-12 text-center">
+                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <br>
+                    <hr style="color: white;">
+                    <a class="link-light" href="index.html">Home</a>
+                    <a class="link-light" href="services.html">Áreas de práctica</a>
+                    <a class="link-light" href="about.html">Sobre la firma</a>
+                    <a class="link-light" href="contact.html">Contacto</a>
+                    <a class="link-light" href="blog.html">Blog</a>
+                    </div>
+                    <div class="margin-left">
+                        <div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
+                        <div class="text-end">
+                        <ul class="ftco-footer-social">
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                          </ul>
                     </div>
                 </div>
             </div>
+        </div>
         </footer>
     </main>
         <!-- Bootstrap core JS-->

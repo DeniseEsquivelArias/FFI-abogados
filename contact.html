@@ -27,19 +27,11 @@
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow border-0">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Áreas de práctica</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="services.html">Derecho civil</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho laboral</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho comercial</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho marítimo</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Familiar y sucesiones</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Derecho penal</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Áreas de práctica</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">Sobre la firma</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -89,20 +81,21 @@
                                    <div class="form-floating mb-4">
                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                        <label for="name">Nombre completo</label>
-                                       <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                       <div class="invalid-feedback" data-sb-feedback="name:required">Ingresa tu nombre completo.</div>
                                    </div>
                                    <!-- Email address input-->
                                    <div class="form-floating mb-4">
                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                        <label for="email">Mail</label>
-                                       <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                       <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                       <div class="invalid-feedback" data-sb-feedback="email:required">Ingresa tu mail.</div>
+                                       <div class="invalid-feedback" data-sb-feedback="email:email">Mail incorrecto. Por favor intenta de nuevo.
+                                    </div>
                                    </div>
                                    <!-- Phone number input-->
                                    <div class="form-floating mb-4">
                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                        <label for="phone">Teléfono</label>
-                                       <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                       <div class="invalid-feedback" data-sb-feedback="phone:required">Ingresa tu teléfono.</div>
                                    </div>
                                    <!-- Message input-->
                                    <div class="form-floating mb-4">
@@ -116,7 +109,7 @@
                                    <!-- has successfully submitted-->
                                    <div class="d-none" id="submitSuccessMessage">
                                        <div class="text-center mb-4">
-                                           <div class="fw-bolder">Consulta enviada exitosamente.</div>
+                                           <div class="fw-bolder">Gracias por su consulta. En breve vamos a contactarle.</div>
                                            To activate this form, sign up at
                                            <br />
                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
@@ -128,29 +121,44 @@
                                    <!-- an error submitting the form-->
                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-4">Error al enviar la consulta, por favor, intente nuevamente.</div></div>
                                    <!-- Submit Button-->
+                                   <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                     <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Consultar</button>
-                                    <button class="btn btn-primary btn-lg"><i class="bi bi-whatsapp"></i> Contactar por WhatsApp</button>
+                                    <button class="btn btn-success btn-lg"><i class="bi bi-whatsapp"></i> Contactar por WhatsApp</button>
+                                </div>
                                </form>
                            </div>
                        </div>
-                   </div>
+                    </div>
            </div>
        </section>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+        <footer class="bg-dark p-4">
+            <div class="container p-lg-4">
+                <div class="row justify-content-sm-center">
+					<div class="col-md-12 text-center">
+                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <br>
+                    <hr style="color: white;">
+                    <a class="link-light" href="index.html">Home</a>
+                    <a class="link-light" href="services.html">Áreas de práctica</a>
+                    <a class="link-light" href="about.html">Sobre la firma</a>
+                    <a class="link-light" href="contact.html">Contacto</a>
+                    <a class="link-light" href="blog.html">Blog</a>
+                    </div>
+                    <div class="margin-left">
+                        <div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
+                        <div class="text-end">
+                        <ul class="ftco-footer-social">
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                          </ul>
                     </div>
                 </div>
             </div>
+        </div>
         </footer>
+    </main>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
