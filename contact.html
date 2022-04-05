@@ -7,12 +7,16 @@
         <meta name="author" content />
         <title>FFI Abogados</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
         <!--Carousel-->
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
         <link href="carousel.css" rel="stylesheet">
@@ -21,14 +25,14 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column">
-        <main>
         <!-- Navigation-->
         <header>    
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow border-0">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/FFI-logo.png" alt="logo" height="70" width="73"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="services.html">Áreas de práctica</a></li>
@@ -40,20 +44,20 @@
                 </div>
             </nav>
         </header>
-        <!-- Header-->
-        <header class="py-5 bg-secondary">
+        <!-- Cover title-->
+        <section class="py-4 bg-secondary">
             <div class="container px-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xxl-8">
-                        <div class="text-center my-5">
-                        </div>
+                    <div class="col-lg-2">
+                        <h1 class="buttom-right text-outline">Contacto</h1> 
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
              <!-- Form section-->
+             <main>
              <div class="container p-4 px-5 my-5">
-                   <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                   <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-xl-start">
                        <div class="mb-4 mb-xl-5">
                            <h1 class="fw-bold">Hacenos tu consulta</h1>
                            <br>
@@ -64,7 +68,7 @@
                                <br>
                                <b>Horario de atención: </b>lunes a viernes de 9 am a 18 pm
                                <br>
-                               <b>Dirección: </b>Esmeralda 1063 - 9° Piso. CABA - C1007ABM
+                               <b>Dirección: </b>Esmeralda 1063 - 9° Piso. CABA - C1007ABM</p>
                            </div>
                        </div>
                        <div class="row gx-5">
@@ -87,15 +91,15 @@
                                    <div class="form-floating mb-4">
                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                        <label for="email">Mail</label>
-                                       <div class="invalid-feedback" data-sb-feedback="email:required">Ingresa tu mail.</div>
-                                       <div class="invalid-feedback" data-sb-feedback="email:email">Mail incorrecto. Por favor intenta de nuevo.
+                                       <div class="invalid-feedback" data-sb-feedback="email:required">El mail que proporcionaste parece inválido.</div>
+                                       <div class="invalid-feedback" data-sb-feedback="email:email">Por favor intenta nuevamente.
                                     </div>
                                    </div>
                                    <!-- Phone number input-->
                                    <div class="form-floating mb-4">
                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                        <label for="phone">Teléfono</label>
-                                       <div class="invalid-feedback" data-sb-feedback="phone:required">Ingresa tu teléfono.</div>
+                                       <div class="invalid-feedback" data-sb-feedback="phone:required">Ingresa tu teléfono con código de área y número.</div>
                                    </div>
                                    <!-- Message input-->
                                    <div class="form-floating mb-4">
@@ -122,41 +126,42 @@
                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-4">Error al enviar la consulta, por favor, intente nuevamente.</div></div>
                                    <!-- Submit Button-->
                                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Consultar</button>
-                                    <button class="btn btn-success btn-lg"><i class="bi bi-whatsapp"></i> Contactar por WhatsApp</button>
+                                    <a class="btn btn-primary btn-lg disabled" id="submitButton" type="submit" href="index.html">Consultar</a>
+                                    <a class="btn btn-success btn-lg" href="https://walink.co/e8b5c2" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Contactar por WhatsApp</a>
                                 </div>
                                </form>
                            </div>
-                       </div>
+                           <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.215012371016!2d-58.380422953148674!3d-34.601442921456666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb16a02adb8d%3A0x422b4a6e3d2bb91c!2sFFI%20Abogados!5e0!3m2!1ses-419!2sar!4v1647899960252!5m2!1ses-419!2sar" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                         </iframe></div>
+                        </div>
                     </div>
            </div>
-       </section>
         <!-- Footer-->
         <footer class="bg-dark p-4">
             <div class="container p-lg-4">
                 <div class="row justify-content-sm-center">
 					<div class="col-md-12 text-center">
-                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <a class="navbar-brand" href="index.html">
+                    <img src="img/FFI-logo-footer.png" alt="logo" height="70" width="73"></a>
                     <br>
                     <hr style="color: white;">
-                    <a class="link-light" href="index.html">Home</a>
-                    <a class="link-light" href="services.html">Áreas de práctica</a>
-                    <a class="link-light" href="about.html">Sobre la firma</a>
-                    <a class="link-light" href="contact.html">Contacto</a>
-                    <a class="link-light" href="blog.html">Blog</a>
+                    <a class="nav-link-light" href="index.html">Home</a>
+                    <a class="nav-link-light" href="services.html">Áreas de práctica</a>
+                    <a class="nav-link-light" href="about.html">Sobre la firma</a>
+                    <a class="nav-link-light" href="contact.html">Contacto</a>
+                    <a class="nav-link-light" href="blog.html">Blog</a>
                     </div>
-                    <div class="margin-left">
-                        <div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
+                    <div class="footer-right">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
                         <div class="text-end">
                         <ul class="ftco-footer-social">
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/abogadosffi/" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/Estudio-Jurídico-FFI-836064853214186" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/company/ffi-abogados/" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                           </ul>
                     </div>
                 </div>
             </div>
-        </div>
         </footer>
     </main>
         <!-- Bootstrap core JS-->

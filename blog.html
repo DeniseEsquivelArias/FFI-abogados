@@ -7,12 +7,16 @@
         <meta name="author" content="" />
         <title>FFI Abogados</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.png" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
         <!--Carousel-->
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
         <link href="carousel.css" rel="stylesheet">
@@ -26,7 +30,8 @@
             <header>    
                 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow border-0">
                     <div class="container px-5">
-                        <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/FFI-logo.png" alt="logo" height="70" width="73"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -41,111 +46,72 @@
                 </nav>
             </header>
             <!-- Header-->
-            <header class="py-5 bg-secondary">
+            <section class="py-4 bg-secondary">
                 <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-8">
-                            <div class="text-center my-5">
-                            </div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-2">
+                            <h1 class="buttom-right text-outline">Blog</h1> 
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>
             <!-- Search section-->
             <header class="bg-dark bg-transparent py-5">
                 <div class="container px-5">
                     <div class="row gx-lg-5">
                         <div class="col-lg-8">
                             <div class="my-5 text-xl-start">
-                                <h1 class="fw-bolder">Encontrá información útil y guías prácticas para hacer valer tus derechos</h1>
-                        <div class="col-xl-5 col-xxl-11 d-none d-xl-block">
-                            <form class="d-flex pt-lg-4">
-                            <input class="form-control" type="search" placeholder="Busca por palabra clave" aria-label="Search">
-                            <button class="btn btn-dark rounded-end rounded-0" type="submit"><i class="bi bi-search"></i> </button>
-                          </form></div>
+                                <h2 class="fw-bolder">Encontrá información útil y guías prácticas para hacer valer tus derechos</h2>
                     </div>
                 </div>
             </header>
             <!-- Blog section-->
             <section class="bg-light py-5">
                 <div class="container px-5 p-md-5">
-                    <button type="button" class="btn btn-outline-dark btn-sm">Artículos recientes</button>
-                    <button type="button" class="btn btn-outline-dark btn-sm">Las más leídas</button>
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                                <img class="card-img-top" src="img/amparos-por-mora.jpg" alt="chica entusiasmada con lentes de lectura, mordiendo un lápiz y mirando su computadora" />
                                 <div class="card-body p-4">
-                                    <h2 class="text-decoration-none link-dark stretched-link" href="#!"><div class="h5 card-title mb-3">Nota I</div></h2>
-                                    <h6 class="card-subtitle mb-2 text-muted">Categoría</h6>
-                                    <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="h5 card-title mb-3">¿Cómo hago un amparo por mora?</div>
+                                    <h6 class="card-subtitle mb-2 text-muted">Amparos</h6>
+                                    <p class="card-text mb-0">Descarga esta guía de trámite sin cargo para iniciar un amparo por mora de entrega de título universitario.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
-                                        <a class="btn btn-dark" href="blog.html">Leer más</a>
+                                        <a class="btn btn-dark stretched-link" href="https://drive.google.com/file/d/1fQk12O-GpxXi5HQG4uf1GirgqXU_tEOT/view?usp=sharing">Descargar</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                                <div class="card-body p-4">
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><div class="h5 card-title mb-3">Another blog post title</div></a>
-                                    <h6 class="card-subtitle mb-2 text-muted">Categoría</h6>
-                                    <p class="card-text mb-0">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <a class="btn btn-dark" href="blog.html">Leer más</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
-                                <div class="card-body p-4">
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><div class="h5 card-title mb-3">The last blog post title is a little bit longer than the others</div></a>
-                                    <h6 class="card-subtitle mb-2 text-muted">Categoría</h6>
-                                    <p class="card-text mb-0">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <a class="btn btn-dark" href="blog.html">Leer más</a>  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+            </div>
             </section>
         <!-- Footer-->
         <footer class="bg-dark p-4">
             <div class="container p-lg-4">
                 <div class="row justify-content-sm-center">
 					<div class="col-md-12 text-center">
-                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <a class="navbar-brand" href="index.html">
+                    <img src="img/FFI-logo-footer.png" alt="logo" height="70" width="73"></a>
                     <br>
                     <hr style="color: white;">
-                    <a class="link-light" href="index.html">Home</a>
-                    <a class="link-light" href="services.html">Áreas de práctica</a>
-                    <a class="link-light" href="about.html">Sobre la firma</a>
-                    <a class="link-light" href="contact.html">Contacto</a>
-                    <a class="link-light" href="blog.html">Blog</a>
+                    <a class="nav-link-light" href="index.html">Home</a>
+                    <a class="nav-link-light" href="services.html">Áreas de práctica</a>
+                    <a class="nav-link-light" href="about.html">Sobre la firma</a>
+                    <a class="nav-link-light" href="contact.html">Contacto</a>
+                    <a class="nav-link-light" href="blog.html">Blog</a>
                     </div>
-                    <div class="margin-left">
-                        <div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
+                    <div class="footer-right">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
                         <div class="text-end">
                         <ul class="ftco-footer-social">
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/abogadosffi/" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/Estudio-Jurídico-FFI-836064853214186" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/company/ffi-abogados/" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                           </ul>
                     </div>
                 </div>
             </div>
-        </div>
         </footer>
     </main>
         <!-- Bootstrap core JS-->

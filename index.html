@@ -7,12 +7,16 @@
         <meta name="author" content="" />
         <title>FFI Abogados</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
         <!--Carousel-->
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
         <link href="carousel.css" rel="stylesheet">
@@ -25,7 +29,8 @@
         <header>    
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow border-0">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/FFI-logo.png" alt="logo" height="70" width="73"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -39,62 +44,21 @@
                 </div>
             </nav>
         </header> 
-            <!-- Carousel section-->
+            <!-- Hero section-->
             <main>
-                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000C24"/></svg>
-                
-                        <div class="container">
-                          <div class="carousel-caption text-start">
-                            <h1>Amparos por mora</h1>
-                            <p>Si te recibiste y aún te adeudan el título universitario, podés contactarte 
-                                <br>con nuestro estudio y realizamos el trámite GRATIS.</p>
+                <section class="banner">
+                    <div class="banner-content">
+                        <div class="container col-lg-10 px-4 py-5">
+                                <h1 class="fw-bolder">Amparos por mora</h1>
+                                <p class="lead fw-normal mb-4">¿Te recibiste y aún te adeudan el título universitario? 
+                                <br>Contactanos para realizar este <b><span>trámite sin cargo.</b></span></p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-lg btn-primary px-4 me-sm-3" href="#">Iniciar trámite</a>
-                            <a class="btn btn-lg btn-outline-primary px-4" href="#">Saber más</a></div>
-                          </div>
+                            <a class="btn btn-primary btn-lg px-4 me-sm-2" href="https://forms.gle/rxoo4vDsRiNVpFyP6" target="_blank" rel="noopener noreferrer">Iniciar trámite</a>
+                            <a class="btn btn-outline-primary btn-lg px-4" href="https://drive.google.com/file/d/1fQk12O-GpxXi5HQG4uf1GirgqXU_tEOT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Saber más</a>
+                                </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#252B42"/></svg>
-                
-                        <div class="container">
-                          <div class="carousel-caption text-start">
-                            <h1>Sucesiones</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Ver más</a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000C24"/></svg>
-                
-                        <div class="container">
-                          <div class="carousel-caption text-start">
-                            <h1>Amparos de salud</h1>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Conoce más</a></p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Atrás</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                    </button>
-                  </div>
-                        
+                </section>
             <!-- Services section-->
             <section class="py-5 bg-light" id="feature">
                 <div class="container px-5 my-5">
@@ -103,7 +67,6 @@
                             <h2 class="section-heading text fw-bolder">Nuestras áreas de prácticas</h2>
                             <p class="mb-5">Nuestra propuesta es ofrecerte una amplia variedad de asesoramientos y trámites legales para que puedas realizarlos simple y rápido.</p>
                         </div>
-                    
                     <div class="col-lg-6 col-xxl-4 mb-5">
                         <div class="card h-100 shadow border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-4 pt-lg-4 pt-lg-4">
@@ -173,8 +136,8 @@
             <div class="container mt-5 mb-5">
                 <div class="row g-3">
                     <div class="text-center">
-                        <h2 class="section-heading text text-white fw-bolder">Lo que opina nuestra clientela nos importa</h2>
-                        <p class="text-white mb-5">Somos una firma que brinda un asesoramiento directo y personalizado.</p>
+                        <h2 class="section-heading text text-white fw-bolder">Experiencias y opiniones sobre la firma</h2>
+                        <p class="text-white mb-5">Somos un grupo de profesionales que brindan un asesoramiento directo y personalizado.</p>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 p-3 text-center">
@@ -213,11 +176,11 @@
             <section class="py-5">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
+                        <div class="col-lg-8 col-xl-8">
                             <div class="text-center">
                                 <h2 class="fw-bolder">¿Por qué elegirnos?</h2>
                                 <p class="fw-normal mb-5">Trabajamos con distintas perspectivas sobre los procesos y nos actualizamos para que el ejercicio de tus derechos sean eficientes ante los trámites y solicitudes que demandan urgencia.
-                                Es por eso que te ofrecemos:</p>
+                                    <br>Es por eso que te ofrecemos:</p>
                             </div>
                         </div>
                     </div>
@@ -249,22 +212,25 @@
                 </div>
                     <!-- Form section-->
                     <aside class="bg-secondary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-                            <div class="mb-4 mb-xl-5">
-                                <h2 class="fs-3 fw-bold text-white">Hacenos tu consulta</h2>
-                                <br>
-                                <p class="text-white">
-                                    <b>Mail: </b>consultas@ffi.com.ar
-                                    <br>
-                                    <b>Teléfono: </b>(+54) 11 1231 2332
-                                    <br>
-                                    <b>Horario de atención: </b>lunes a viernes de 9 am a 18 pm
-                                    <br>
-                                    <b>Dirección: </b>Esmeralda 1063 - 9° Piso. CABA - C1007ABM
+                        <div class="d-flex justify-content-between flex-column flex-xl-row text-xl-start">
+                            <div class="col-lg-6 order-first order-lg-last">
+                                <div class="map-wrapper">
+                                    <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.215012371016!2d-58.380422953148674!3d-34.601442921456666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb16a02adb8d%3A0x422b4a6e3d2bb91c!2sFFI%20Abogados!5e0!3m2!1ses-419!2sar!4v1647899960252!5m2!1ses-419!2sar" width="600" height="750"  aria-hidden="false" tabindex="0" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
-                            <div class="row gx-5">
-                                <div class="col-lg-8 col-xl-6">
+                                <div class="col-lg-4 col-xl-5">
+                                    <div class="col-xxl-11 mb-5">
+                                        <h1 class="fw-bold text-white">Hacenos tu consulta</h1>
+                                        <br>
+                                        <p class="text-white">
+                                            <b>Mail: </b>consultas@ffi.com.ar
+                                            <br>
+                                            <b>Teléfono: </b>(+54) 11 1231 2332
+                                            <br>
+                                            <b>Horario de atención: </b>lunes a viernes de 9 am a 18 pm
+                                            <br>
+                                            <b>Dirección: </b>Esmeralda 1063 - 9° Piso. CABA - C1007ABM</p>
+                                        </div>
                                     <!-- * * * * * * * * * * * * * * *-->
                                     <!-- * * SB Forms Contact Form * *-->
                                     <!-- * * * * * * * * * * * * * * *-->
@@ -272,12 +238,13 @@
                                     <!-- To make this form functional, sign up at-->
                                     <!-- https://startbootstrap.com/solution/contact-forms-->
                                     <!-- to get an API token!-->
+                                   
                                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                         <!-- Name input-->
                                         <div class="form-floating mb-4">
-                                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                            <input class="form-control" id="name" type="text" placeholder="Ingresa tu nombre completo..." data-sb-validations="required" />
                                             <label for="name">Nombre completo</label>
-                                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="name:required">Necesitamos tu nombre completo para una atención personalizada</div>
                                         </div>
                                         <!-- Email address input-->
                                         <div class="form-floating mb-4">
@@ -329,27 +296,26 @@
             <div class="container p-lg-4">
                 <div class="row justify-content-sm-center">
 					<div class="col-md-12 text-center">
-                    <a class="navbar-brand" href="index.html">FFI Abogados</a>
+                    <a class="navbar-brand" href="index.html">
+                    <img src="img/FFI-logo-footer.png" alt="logo" height="70" width="73"></a>
                     <br>
                     <hr style="color: white;">
-                    <a class="link-light" href="index.html">Home</a>
-                    <a class="link-light" href="services.html">Áreas de práctica</a>
-                    <a class="link-light" href="about.html">Sobre la firma</a>
-                    <a class="link-light" href="contact.html">Contacto</a>
-                    <a class="link-light" href="blog.html">Blog</a>
+                    <a class="nav-link-light" href="index.html">Home</a>
+                    <a class="nav-link-light" href="services.html">Áreas de práctica</a>
+                    <a class="nav-link-light" href="about.html">Sobre la firma</a>
+                    <a class="nav-link-light" href="contact.html">Contacto</a>
+                    <a class="nav-link-light" href="blog.html">Blog</a>
                     </div>
-                    <div class="margin-left">
-                        <div class="small m-0 text-white">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
+                    <div class="footer-right">&copy; FFI Abogados 2022. Todos los derechos reservados.</div>
                         <div class="text-end">
                         <ul class="ftco-footer-social">
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
-                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/abogadosffi/" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/Estudio-Jurídico-FFI-836064853214186" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/company/ffi-abogados/" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
                           </ul>
                     </div>
                 </div>
             </div>
-        </div>
         </footer>
     </main>
         <!-- Bootstrap core JS-->
