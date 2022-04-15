@@ -209,7 +209,6 @@ abbr[data-bs-original-title] {
   background-color: #f5f5f5;
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center center;
   background-attachment: fixed;
   transition: all .1s ease-in-out;
 }
@@ -220,8 +219,41 @@ abbr[data-bs-original-title] {
   }
 }
 
+.cover-area {
+  background-image:
+  url(../img/Cover-amparos.png);
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 30px);
+  background-position: center;
+  background-color: #000C24;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: all .1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .cover-area {
+    background-color: #000C24;
+  }
+}
+
+.cover-end {
+  background-image:
+  url(../img/cover-end.png);
+  position: relative;
+  width: 100%;
+  height: calc(70vh - 30px);
+  background-position: center;
+  background-color: #000C24;
+  background-size:cover;
+  background-repeat: no-repeat;
+  transition: all .1s ease-in-out;
+}
+
 .banner-content{
-margin: 0px 0px 0px 0px;
+margin: 0;
 padding: 0;
 width: 100%;
 height: 100%;
